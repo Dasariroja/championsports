@@ -9,20 +9,16 @@ export class DetailsMethods {
     }
     async ClickOnFstName() {
         await this.detailslocators.firstname.fill('Roja');
-
     }
-
     async clickonlastname()
     {
         await this.detailslocators.lastname.fill('Dasari');
 
     }
-
     async Clickonemail()
     {
         await this.detailslocators.email.fill('rojaroja@gmail.com');
     }
-
     async Clickonconfirmemail()
     {
         await this.detailslocators.confirmemail.fill('rojaroja@gmail.com');
@@ -43,7 +39,6 @@ export class DetailsMethods {
     {
         await this.detailslocators.methodofcontact.click();
     }
-
     async Clickonmethodofcontact()
     {
         await this.detailslocators.methodofcontact.fill('8686866699');
@@ -51,7 +46,6 @@ export class DetailsMethods {
     async Clickonhearabout()
     {
         await this.detailslocators.hear.click();
-    
     }
     async Clickonasearchengin()
     {
@@ -67,13 +61,9 @@ export class DetailsMethods {
     await this.detailslocators.comments.fill('Right Comments here ');
 
    }
-
    async ClickonSentBtn()
    {
       await this.detailslocators.sent.click();
-    
    }
-
-    
    }
     

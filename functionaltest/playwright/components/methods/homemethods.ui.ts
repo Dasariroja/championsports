@@ -13,7 +13,6 @@ export class HomeMethods {
     async ClickonAboutUsBtn() {
         await this.homelocators.aboutus.click();
     }
-
     async ClickonWhyChamSports() {
         await this.homelocators.whychamsports.click();
     }

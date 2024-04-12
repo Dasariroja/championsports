@@ -16,8 +16,6 @@ constructor(page:Page)
     this.aboutus = page.getByText('about us').first();
     this.whychamsports = page.getByText('why champion sports').first();
     this.sportsbookbtn = page.locator('.btn_list').first();
-
-    
 }
 
 }
