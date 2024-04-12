@@ -8,35 +8,35 @@ test('Navigate to champion sports', async ({ page }) => {
     await page.goto('https://www.championsports.net/home?lang=en');
 
     const cookiesmethods = new CookiesMethods(page)
-    await cookiesmethods.ClickonIagree();
+    await cookiesmethods.clickOnIAgree();
 
     const homemethods = new HomeMethods(page);
-    await homemethods.ClickonLogo();
-    await homemethods.ClickonAboutUsBtn();
-    await homemethods.ClickonWhyChamSports();
-    await homemethods.ClickonLogo();
-    await homemethods.ClickonSportsBook();
+    await homemethods.clickonLogo();
+    await homemethods.clickonAboutUsBtn();
+    await homemethods.clickonWhyChamSports();
+    await homemethods.clickonLogo();
+    await homemethods.clickonSportsBook();
 
     const productmethods = new ProductMethods(page);
-    await productmethods.ClickOnDemoBtn();
+    await productmethods.clickOnDemoBtn();
     await page.waitForLoadState();
     await page.waitForTimeout(30000);
 
     const detailsmethods = new DetailsMethods(page);
-    await detailsmethods.ClickOnFstName();
-    await detailsmethods.clickonlastname();
-    await detailsmethods.Clickonemail();
-    await detailsmethods.Clickonconfirmemail();
-    await detailsmethods.Clickonphonenumber();
-    await detailsmethods.Clickonskype();
-    await detailsmethods.ClickonPhone();
-    await detailsmethods.Clickonnumberbtn();
-    await detailsmethods.Clickonmethodofcontact();
-    await detailsmethods.Clickonhearabout();
-    await detailsmethods.Clickonasearchengin();
-    await detailsmethods.Clickonbox();
-    await detailsmethods.Clickoncomments();
-    await detailsmethods.ClickonSentBtn();
+    await detailsmethods.clickOnFirstName();
+    await detailsmethods.clickOnLastName();
+    await detailsmethods.clickOnEmail();
+    await detailsmethods.clickOnConfirmEmail();
+    await detailsmethods.clickOnPhoneNumber();
+    await detailsmethods.clickOnSkype();
+    await detailsmethods.clickOnPhone();
+    await detailsmethods.clickOnNumberBtn();
+    await detailsmethods.clickOnMethodofContact();
+    await detailsmethods.clickOnHearabout();
+    await detailsmethods.clickOnaSearchengin();
+    await detailsmethods.clickOnBox();
+    await detailsmethods.clickOnComments();
+    await detailsmethods.clickonSentBtn();
     await page.waitForTimeout(5000);
 });
 

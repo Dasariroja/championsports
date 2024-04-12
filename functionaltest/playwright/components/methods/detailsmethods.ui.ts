@@ -8,59 +8,59 @@ export class DetailsMethods {
         this.detailslocators = new DetailsLocators(page);
     }
 
-    async ClickOnFstName() {
+    async clickOnFirstName() {
         await this.detailslocators.firstname.fill('Roja');
     }
 
-    async clickonlastname() {
+    async clickOnLastName() {
         await this.detailslocators.lastname.fill('Dasari');
     }
 
-    async Clickonemail() {
+    async clickOnEmail() {
         await this.detailslocators.email.fill('rojaroja@gmail.com');
     }
 
-    async Clickonconfirmemail() {
+    async clickOnConfirmEmail() {
         await this.detailslocators.confirmemail.fill('rojaroja@gmail.com');
     }
 
-    async Clickonphonenumber() {
+    async clickOnPhoneNumber() {
         await this.detailslocators.contactumber.fill('8956457867');
     }
 
-    async Clickonskype() {
+    async clickOnSkype() {
         await this.detailslocators.skype.click();
     }
 
-    async ClickonPhone() {
+    async clickOnPhone() {
         await this.detailslocators.clickphone.click();
     }
 
-    async Clickonnumberbtn() {
+    async clickOnNumberBtn() {
         await this.detailslocators.methodofcontact.click();
     }
 
-    async Clickonmethodofcontact() {
+    async clickOnMethodofContact() {
         await this.detailslocators.methodofcontact.fill('8686866699');
     }
 
-    async Clickonhearabout() {
+    async clickOnHearabout() {
         await this.detailslocators.hear.click();
     }
 
-    async Clickonasearchengin() {
+    async clickOnaSearchengin() {
         await this.detailslocators.searchenginebtn.click();
     }
 
-    async Clickonbox() {
+    async clickOnBox() {
         await this.detailslocators.productinterest.click();
     }
 
-    async Clickoncomments() {
+    async clickOnComments() {
         await this.detailslocators.comments.fill('Right Comments here ');
     }
 
-    async ClickonSentBtn() {
+    async clickonSentBtn() {
         await this.detailslocators.sent.click();
     }
 }

@@ -6,7 +6,7 @@ export class CookiesMethods {
     constructor(page: Page) {
      this.cookieslocators = new CookiesLocators(page);
     }
-    async ClickonIagree() {
+    async clickOnIAgree() {
     await this.cookieslocators.agreebtn.click();
     }
 }
