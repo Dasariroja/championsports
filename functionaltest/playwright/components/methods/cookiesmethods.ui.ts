@@ -1,6 +1,5 @@
 import { Page } from "@playwright/test"
 import { CookiesLocators } from "../locators/cookieslocators.ui";
-
 export class CookiesMethods {
     readonly cookieslocators: CookiesLocators;
 
@@ -10,5 +9,4 @@ export class CookiesMethods {
     async ClickonIagree() {
         await this.cookieslocators.agreebtn.click();
     }
-    
 }

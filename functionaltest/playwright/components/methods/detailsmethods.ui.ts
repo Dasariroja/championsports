@@ -13,7 +13,6 @@ export class DetailsMethods {
     async clickonlastname()
     {
         await this.detailslocators.lastname.fill('Dasari');
-
     }
     async Clickonemail()
     {

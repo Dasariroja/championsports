@@ -1,6 +1,5 @@
 import { Page } from "@playwright/test"
 import { Productlocators } from "../locators/productlocators.ui";
-
 export class ProductMethods {
     readonly productlocators: Productlocators;
 
@@ -10,5 +9,4 @@ export class ProductMethods {
     async ClickOnDemoBtn() {
         await this.productlocators.demobtn.click();
     }
-    
 }

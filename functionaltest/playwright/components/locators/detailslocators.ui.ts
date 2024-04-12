@@ -1,7 +1,5 @@
 import { Locator, Page } from "@playwright/test"
-
 export class DetailsLocators {
-
 readonly firstname: Locator;
 readonly lastname: Locator;
 readonly email:Locator;
@@ -17,11 +15,7 @@ readonly productinterest: Locator;
 readonly comments: Locator;
 readonly sent: Locator;
 
-
-
-
-constructor(page:Page)
-{
+constructor(page:Page){
     this.firstname = page.getByPlaceholder('First Name');
     this.lastname = page.getByPlaceholder('Last Name');
     this.email = page.getByPlaceholder('Email Address……', { exact: true });
@@ -36,5 +30,4 @@ constructor(page:Page)
     this.comments= page.getByPlaceholder('Please leave your comments...');
     this.sent = page.getByText('send');
 }
-
 }
