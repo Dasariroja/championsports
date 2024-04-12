@@ -7,62 +7,60 @@ export class DetailsMethods {
     constructor(page: Page) {
         this.detailslocators = new DetailsLocators(page);
     }
+
     async ClickOnFstName() {
         await this.detailslocators.firstname.fill('Roja');
     }
-    async clickonlastname()
-    {
+
+    async clickonlastname() {
         await this.detailslocators.lastname.fill('Dasari');
     }
-    async Clickonemail()
-    {
+
+    async Clickonemail() {
         await this.detailslocators.email.fill('rojaroja@gmail.com');
     }
-    async Clickonconfirmemail()
-    {
+
+    async Clickonconfirmemail() {
         await this.detailslocators.confirmemail.fill('rojaroja@gmail.com');
     }
-    async Clickonphonenumber()
-    {
+
+    async Clickonphonenumber() {
         await this.detailslocators.contactumber.fill('8956457867');
     }
-    async Clickonskype()
-    {
+
+    async Clickonskype() {
         await this.detailslocators.skype.click();
     }
-    async ClickonPhone()
-    {
+
+    async ClickonPhone() {
         await this.detailslocators.clickphone.click();
     }
-    async Clickonnumberbtn()
-    {
+
+    async Clickonnumberbtn() {
         await this.detailslocators.methodofcontact.click();
     }
-    async Clickonmethodofcontact()
-    {
+
+    async Clickonmethodofcontact() {
         await this.detailslocators.methodofcontact.fill('8686866699');
     }
-    async Clickonhearabout()
-    {
+
+    async Clickonhearabout() {
         await this.detailslocators.hear.click();
     }
-    async Clickonasearchengin()
-    {
+
+    async Clickonasearchengin() {
         await this.detailslocators.searchenginebtn.click();
     }
-   async Clickonbox()
-   {
-    await this.detailslocators.productinterest.click();
 
-   }
-   async Clickoncomments()
-   {
-    await this.detailslocators.comments.fill('Right Comments here ');
+    async Clickonbox() {
+        await this.detailslocators.productinterest.click();
+    }
 
-   }
-   async ClickonSentBtn()
-   {
-      await this.detailslocators.sent.click();
-   }
-   }
-    
+    async Clickoncomments() {
+        await this.detailslocators.comments.fill('Right Comments here ');
+    }
+
+    async ClickonSentBtn() {
+        await this.detailslocators.sent.click();
+    }
+}

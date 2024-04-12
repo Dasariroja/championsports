@@ -6,6 +6,7 @@ export class ProductMethods {
     constructor(page: Page) {
     this.productlocators = new Productlocators(page);
     }
+    
     async ClickOnDemoBtn() {
         await this.productlocators.demobtn.click();
     }

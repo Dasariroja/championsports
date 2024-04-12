@@ -4,7 +4,7 @@ import { DetailsMethods } from "../components/methods/detailsmethods.ui";
 import { HomeMethods } from "../components/methods/homemethods.ui";
 import { ProductMethods } from "../components/methods/productmethods.ui";
 
-test.only('Navigate to champion sports', async ({ page }) => {
+test('Navigate to champion sports', async ({ page }) => {
     await page.goto('https://www.championsports.net/home?lang=en');
 
     const cookiesmethods = new CookiesMethods(page)

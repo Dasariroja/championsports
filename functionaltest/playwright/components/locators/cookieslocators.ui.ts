@@ -1,5 +1,4 @@
 import { Locator, Page } from "@playwright/test"
-
 export class CookiesLocators {
     readonly agreebtn: Locator;
 

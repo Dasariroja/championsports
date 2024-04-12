@@ -7,15 +7,19 @@ export class HomeMethods {
     constructor(page: Page) {
         this.homelocators = new HomeLocators(page);
     }
+    
     async ClickonLogo() {
         await this.homelocators.logo.click();
     }
+
     async ClickonAboutUsBtn() {
         await this.homelocators.aboutus.click();
     }
+
     async ClickonWhyChamSports() {
         await this.homelocators.whychamsports.click();
     }
+
     async ClickonSportsBook() {
         await this.homelocators.sportsbookbtn.click();
     }
