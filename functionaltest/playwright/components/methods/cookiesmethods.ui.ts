@@ -4,9 +4,9 @@ export class CookiesMethods {
     readonly cookieslocators: CookiesLocators;
 
     constructor(page: Page) {
-     this.cookieslocators = new CookiesLocators(page);
+        this.cookieslocators = new CookiesLocators(page);
     }
     async clickOnIAgree() {
-    await this.cookieslocators.agreebtn.click();
+        await this.cookieslocators.agreebtn.click();
     }
 }
