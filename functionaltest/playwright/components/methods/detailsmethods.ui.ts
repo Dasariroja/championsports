@@ -63,4 +63,9 @@ export class DetailsMethods {
     async clickonSentBtn() {
         await this.detailslocators.sent.click();
     }
+
+    async clickOnCloseBtn()
+    {
+        await this.detailslocators.closebtn.click();
+    }
 }
