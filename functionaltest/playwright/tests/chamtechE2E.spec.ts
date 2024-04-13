@@ -38,6 +38,5 @@ test('Navigate to champion sports', async ({ page }) => {
     await detailsmethods.clickOnComments();
     await detailsmethods.clickonSentBtn();
     await detailsmethods.clickOnCloseBtn();
-    await page.waitForTimeout(5000);
 });
 
