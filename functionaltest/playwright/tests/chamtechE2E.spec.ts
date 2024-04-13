@@ -20,7 +20,7 @@ test('Navigate to champion sports', async ({ page }) => {
     const productmethods = new ProductMethods(page);
     await productmethods.clickOnDemoBtn();
     await page.waitForLoadState();
-    await page.waitForTimeout(30000);
+    await page.waitForTimeout(40000);
 
     const detailsmethods = new DetailsMethods(page);
     await detailsmethods.clickOnFirstName();
@@ -37,6 +37,7 @@ test('Navigate to champion sports', async ({ page }) => {
     await detailsmethods.clickOnBox();
     await detailsmethods.clickOnComments();
     await detailsmethods.clickonSentBtn();
+    await detailsmethods.clickOnCloseBtn();
     await page.waitForTimeout(5000);
 });
 
