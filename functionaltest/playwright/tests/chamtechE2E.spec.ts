@@ -40,3 +40,7 @@ test('Navigate to champion sports', async ({ page }) => {
     await detailsmethods.clickOnCloseBtn();
 });
 
+test('Navigate to champion sports1', async ({ page }) => {
+    await page.goto('https://www.championsports.net/home?lang=en');
+});
+
