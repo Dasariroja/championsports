@@ -74,10 +74,9 @@ test.describe('three tests', () => {
         await landingpagemethods.printWhyChampionsTitle();
         await landingpagemethods.printNewsTitle();
         await page.waitForTimeout(5000);
-
     });
 
-    test.only(' Sample test Fossil ', async ({ page }) => {
+    test(' Sample test Fossil ', async ({ page }) => {
 
         await page.goto('https://www.fossil.com/en-gb/');
         await page.getByRole('button', { name: 'ACCEPT ALL' }).click();
