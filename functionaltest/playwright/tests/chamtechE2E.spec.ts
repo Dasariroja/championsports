@@ -6,7 +6,7 @@ import { LandingPagemethods } from "../components/methods/landingpagemethods.ui"
 import { NewsEventsMethos } from "../components/methods/newseventsmethods.ui";
 import { ProductMethods } from "../components/methods/productmethods.ui";
 
-test.describe('two tests', () => {
+test.describe('three tests', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://www.championsports.net/home?id=1&lang=en');
         
@@ -65,7 +65,7 @@ test.describe('two tests', () => {
 
     });
 
-    test.only('Home Page ', async ({ page }) => {
+    test('Home Page ', async ({ page }) => {
         const landingpagemethods = new LandingPagemethods(page);
         await landingpagemethods.printFirstTitle();
         await landingpagemethods.printSecondTitle();
