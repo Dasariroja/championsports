@@ -62,10 +62,9 @@ test.describe('three tests', () => {
         await newseventsmethods.clickOnIceLondonBtn();
         await newseventsmethods.clickOnSwipeBtn();
         // await page.waitForTimeout(5000);
-
     });
 
-    test('Home Page ', async ({ page }) => {
+    test('Home Page', async ({ page }) => {
         const landingpagemethods = new LandingPagemethods(page);
         await landingpagemethods.printFirstTitle();
         await landingpagemethods.printSecondTitle();
@@ -76,15 +75,10 @@ test.describe('three tests', () => {
         await page.waitForTimeout(5000);
     });
 
-    test(' Sample test Fossil ', async ({ page }) => {
-
+    test('Sample test Fossil', async ({ page }) => {
         await page.goto('https://www.fossil.com/en-gb/');
         await page.getByRole('button', { name: 'ACCEPT ALL' }).click();
         await page.getByRole('button', { name: 'ACCEPT ALL' }).click();
         await page.getByLabel('Women', { exact: true }).click();
-    
     });
-
 });
-
-
