@@ -9,7 +9,7 @@ import { ProductMethods } from "../components/methods/productmethods.ui";
 test.describe('three tests', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('https://www.championsports.net/home?id=1&lang=en');
-        
+
         const cookiesmethods = new CookiesMethods(page)
         await cookiesmethods.clickOnIAgree();
     });
@@ -77,5 +77,15 @@ test.describe('three tests', () => {
 
     });
 
+    test.only(' Sample test Fossil ', async ({ page }) => {
+
+        await page.goto('https://www.fossil.com/en-gb/');
+        await page.getByRole('button', { name: 'ACCEPT ALL' }).click();
+        await page.getByRole('button', { name: 'ACCEPT ALL' }).click();
+        await page.getByLabel('Women', { exact: true }).click();
+    
+    });
+
 });
+
 
