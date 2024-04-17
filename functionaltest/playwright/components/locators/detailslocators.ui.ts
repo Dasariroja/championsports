@@ -14,6 +14,7 @@ export class DetailsLocators {
     readonly productinterest: Locator;
     readonly comments: Locator;
     readonly sent: Locator;
+    readonly closebtn: Locator;
 
     constructor(page: Page) {
         this.firstname = page.getByPlaceholder('First Name');
@@ -29,5 +30,6 @@ export class DetailsLocators {
         this.productinterest = page.getByLabel('Sportsbook');
         this.comments = page.getByPlaceholder('Please leave your comments...');
         this.sent = page.getByText('send');
+        this.closebtn = page.locator('a').first();
     }
 }
