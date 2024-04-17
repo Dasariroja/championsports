@@ -63,13 +63,7 @@ export class DetailsMethods {
     async clickonSentBtn() {
         await this.detailslocators.sent.click();
     }
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> c40d98f34e6198681b423067b745ba2e0e3d6a39
-    async clickOnCloseBtn()
-    {
+    async clickOnCloseBtn() {
         await this.detailslocators.closebtn.click();
     }
 }
